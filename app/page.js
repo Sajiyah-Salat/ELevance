@@ -116,20 +116,22 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-black text-white py-16 m-20">
-        <div className="container flex flex-col md:flex-row  flex-wrap text-center">
-          {[
-            { value: '100,000', label: 'Active Talents' },
-            { value: '10,000', label: 'Projects' },
-            { value: '1,000+', label: 'Partners' }
-          ].map((stat, index) => (
-            <div key={index} className=" border-[1px] border-gray-900 p-36 flex flex-col ">
-              <p className="text-5xl font-extralight">{stat.value}</p>
-              <h6 className="text-sm text-start text-gray-400">{stat.label}</h6>
-            </div>
-          ))}
-        </div>
+      <div className="bg-black text-white py-16 h-[57vh] flex items-center justify-center">
+  <div className="flex flex-col lg:flex-row md:flex-row text-center gap-6">
+    {[
+      { value: '100,000', label: 'Active Talents' },
+      { value: '10,000', label: 'Projects' },
+      { value: '1,000+', label: 'Partners' }
+    ].map((stat, index) => (
+      <div key={index} className="border-[1px] border-gray-900 p-16 flex flex-col items-center">
+        <p className="text-5xl font-extralight">{stat.value}</p>
+        <h6 className="text-sm text-gray-400">{stat.label}</h6>
       </div>
+    ))}
+  </div>
+</div>
+
+
 <div>
   <h1 className="gradient-text m-20 text-2xl">Want to Work With Us? Here Is How</h1>
 </div>
